@@ -16,4 +16,4 @@ if 1<age<120 and time>0:
     print('полная карточка:')
     print(surname,name,gr,city,age,z,time)
 else:
-    print('ошибка!')
+    print('ошибка')

@@ -20,7 +20,7 @@ sum_total=sum1+sum2+delivery
 bez_delivery=sum1+sum2
 change=oplata-sum_total
 
-if kolvo1>0 and kolvo2>0 and value1>0 and value2>0 and delivery>0 and oplata>=sum_total:
+if kolvo1>=0 and kolvo2>=0 and value1>=0 and delivery>=0 and oplata>=sum_total:
     print(order_name,'--',name)
     print('-'*30)
     print('позиция | количество | цена за штуку | стоимость')
@@ -29,6 +29,7 @@ if kolvo1>0 and kolvo2>0 and value1>0 and value2>0 and delivery>0 and oplata>=su
     print('-'*30)
     print(f'стоимость без доставки: {bez_delivery:.2f}')
     print(f'стоимость доставки: {delivery:.2f}')
+    print(f'общее количество: {kolvo1+kolvo2}')
     print(f'итого: {sum_total:.2f}')
     print(f'внесенная сумма: {oplata:.2f}')
     print(f'сдача: {change:.2f}')
